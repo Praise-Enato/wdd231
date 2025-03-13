@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Home Page</title>
+  <meta name="description" content="A responsive course home page with accessible design and functionality.">
+  <meta name="author" content="Praise Enato">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <header>
+    <img src="images/profile.jpg" alt="Praise's photo">
+    <span>Praise Enato</span>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="chamber.html">Chamber</a></li>
+        <li><a href="https://github.com/yourgithubusername">GitHub Profile</a></li>
+        <li><a href="https://linkedin.com">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Home</h1>
+    <section>
+      <h2>Course Work</h2>
+      <!-- Content goes here -->
+    </section>
+    <section>
+      <h2>Nigeria</h2>
+      <img src="images/nigeria.jpg" alt="Nigeria Map">
+      <p>Nigeria Map</p>
+    </section>
+    <section>
+      <h2>Web and Computer Programming Certificate</h2>
+      <div id="filters">
+        <button id="all" type="button">All Courses</button>
+        <button id="wdd" type="button">WDD Courses</button>
+        <button id="cse" type="button">CSE Courses</button>
+      </div>
+      <div id="courses">
+        <!-- Course cards will be dynamically added here -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Praise Enato | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</body>
+</html>
