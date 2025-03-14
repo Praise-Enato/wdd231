@@ -21,7 +21,7 @@ function displayCourses(filter = 'all') {
     `).join('');
 
     const credits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
-    if (totalCredits) { // Added check
+    if (totalCredits) {
         totalCredits.textContent = credits;
     }
 }
@@ -33,4 +33,4 @@ document.querySelectorAll('#filters button').forEach(button => {
     });
 });
 
-displayCourses(); // Initial display
+displayCourses();
