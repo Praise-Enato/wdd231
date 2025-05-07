@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Course Home Page</title>
-  <meta name="description" content="A responsive course home page with accessible design and functionality.">
-  <meta name="author" content="Praise Enato">
-  <meta property="og:title" content="Course Home Page">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://example.com/images/nigeria.jpg">
-  <meta property="og:url" content="https://example.com">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css">
+  <meta name="description" content="A responsive course home page with accessible design and functionality." />
+  <meta name="author" content="Praise Enato" />
+  <meta property="og:title" content="Course Home Page" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://example.com/images/nigeria.jpg" />
+  <meta property="og:url" content="https://example.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
 </head>
 <body>
   <header>
-    <img src="images/profile.jpg" alt="Praise's photo">
+    <img src="images/profile.jpg" alt="Praise's photo" />
     <span>Praise Enato</span>
+    <button id="menu-button">&#9776;</button>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -27,6 +29,7 @@
       </ul>
     </nav>
   </header>
+
   <main>
     <h1>Home</h1>
     <section>
@@ -34,7 +37,7 @@
     </section>
     <section>
       <h2>Nigeria</h2>
-      <img src="images/nigeria.jpg" alt="Nigeria Map">
+      <img src="images/nigeria.jpg" alt="Nigeria Map" />
       <p>Nigeria Map</p>
     </section>
     <section>
@@ -44,15 +47,16 @@
         <button id="wdd" type="button">WDD Courses</button>
         <button id="cse" type="button">CSE Courses</button>
       </div>
-      <div id="courses">
-      </div>
+      <div id="courses"></div>
       <p>Total Credits: <span id="total-credits"></span></p>
     </section>
   </main>
+
   <footer>
     <p>&copy; <span id="currentyear"></span> | Praise Enato | Nigeria</p>
     <p id="lastModified"></p>
   </footer>
+
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/course.js" defer></script>
