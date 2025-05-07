@@ -58,3 +58,7 @@ header img {
 header span {
   font-size: 1.5rem;
 }
+
+body {
+  overflow-x: hidden;
+}

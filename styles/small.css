@@ -2,23 +2,33 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 header {
   background-color: #333333;
   color: #ffffff;
   padding: 1rem;
-  text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
   align-items: center;
 }
 
-header img {
+.header-left img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.header-left span {
+  font-size: 1.5rem;
 }
 
 nav {
@@ -58,6 +68,7 @@ nav ul li a.active {
   color: #ffffff;
   font-size: 1.5rem;
   cursor: pointer;
+  margin-left: 1rem;
 }
 
 #filters {
