@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Timbuktu Chamber of Commerce Business Directory - Find local businesses and services in Timbuktu">
+    <meta name="author" content="Your Name">
+    
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Timbuktu Chamber of Commerce Business Directory">
+    <meta property="og:description" content="Explore the business directory of Timbuktu Chamber of Commerce and discover local businesses and services">
+    <meta property="og:image" content="https://yoursite.com/chamber/images/timbuktu-social-share.jpg">
+    <meta property="og:url" content="https://yoursite.com/chamber/directory.html">
+    
+    <title>Business Directory | Timbuktu Chamber of Commerce</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 32.5em)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 64em)">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/timbuktu-logo.png" alt="Timbuktu Chamber of Commerce Logo">
+            <div class="site-name">
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <button id="hamburgerBtn">&#9776;</button>
+            <nav>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li class="active"><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="podcast.html">Podcast</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mode">
+            <button id="darkModeToggle">🌓</button>
+        </div>
+    </header>
+    
+    <main class="directory">
+        <h2>Business Directory</h2>
+        <div class="view-toggle">
+            <button id="gridBtn" class="active">Grid View</button>
+            <button id="listBtn">List View</button>
+        </div>
+        
+        <div id="businesses" class="grid"></div>
+    </main>
+    
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/timbuktu-logo.png" alt="Timbuktu Chamber of Commerce Logo">
+                <h3>Timbuktu Chamber of Commerce</h3>
+                <p>10 Rue De La Paix</p>
+                <p>Timbuktu, Mali 999</p>
+            </div>
+            <div class="footer-contact">
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-2300</p>
+                <div class="social-icons">
+                    <a href="https://youtube.com" target="_blank"><img src="images/youtube-icon.png" alt="YouTube"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>WDD231 Class Project</p>
+            <p>Praise Enato</p>
+            <p>&copy; <span id="currentYear"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+</html>

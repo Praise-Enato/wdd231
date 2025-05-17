@@ -1,0 +1,61 @@
+/* Medium screen styles (32.5em / 520px and up) */
+
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.logo {
+    margin-bottom: 0;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+#hamburgerBtn {
+    position: static;
+}
+
+.mode {
+    position: static;
+    margin-left: var(--spacing-lg);
+}
+
+#darkModeToggle {
+    position: static;
+}
+
+/* Directory specific styles */
+.grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Footer adjustments */
+.footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo, .footer-contact {
+    text-align: left;
+}
+
+/* List view adjustments */
+.list .member-card {
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.list .member-image {
+    width: 100px;
+    height: 100px;
+}
+
+.list .member-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+}

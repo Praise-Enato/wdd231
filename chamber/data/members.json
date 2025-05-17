@@ -1,0 +1,84 @@
+{
+  "members": [
+    {
+      "name": "Desert Oasis Cafe",
+      "address": "15 Avenue des Sables, Timbuktu",
+      "phone": "(223) 555-4321",
+      "website": "https://desertoasiscafe.com",
+      "image": "desert-oasis.jpg",
+      "membershipLevel": 3,
+      "tagline": "Traditional cuisine with a modern twist",
+      "description": "A local favorite serving authentic Malian cuisine with international influences in a relaxed atmosphere."
+    },
+    {
+      "name": "Sahara Tours",
+      "address": "42 Rue du Commerce, Timbuktu",
+      "phone": "(223) 555-8765",
+      "website": "https://saharatours.com",
+      "image": "sahara-tours.png",
+      "membershipLevel": 3,
+      "tagline": "Explore the wonders of the desert",
+      "description": "Offering guided tours of the Sahara Desert and cultural experiences throughout Mali."
+    },
+    {
+      "name": "Timbuktu Tech Solutions",
+      "address": "7 Innovation Street, Timbuktu",
+      "phone": "(223) 555-9876",
+      "website": "https://timbuktutech.com",
+      "image": "timbuktu-tech.jpg",
+      "membershipLevel": 2,
+      "tagline": "Bridging tradition and technology",
+      "description": "Providing IT services, web development, and digital solutions to local businesses."
+    },
+    {
+      "name": "Ancient Manuscripts Museum",
+      "address": "1 Heritage Avenue, Timbuktu",
+      "phone": "(223) 555-1234",
+      "website": "https://manuscriptsmuseum.org",
+      "image": "manuscripts-museum.jpg",
+      "membershipLevel": 1,
+      "tagline": "Preserving our written heritage",
+      "description": "A non-profit institution dedicated to preserving and displaying Timbuktu's historic manuscripts."
+    },
+    {
+      "name": "Desert Sun Solar",
+      "address": "23 Renewable Road, Timbuktu",
+      "phone": "(223) 555-7654",
+      "website": "https://desertsun.com",
+      "image": "desert-sun.jpg",
+      "membershipLevel": 2,
+      "tagline": "Harnessing the power of the sun",
+      "description": "Providing solar energy solutions for homes and businesses across the region."
+    },
+    {
+      "name": "Timbuktu Textiles",
+      "address": "18 Artisan Alley, Timbuktu",
+      "phone": "(223) 555-2468",
+      "website": "https://timbuktutextiles.com",
+      "image": "timbuktu-textiles.png",
+      "membershipLevel": 3,
+      "tagline": "Weaving tradition into fashion",
+      "description": "Creating handcrafted textiles using traditional Malian techniques with contemporary designs."
+    },
+    {
+      "name": "Sahel Agricultural Cooperative",
+      "address": "56 Farming Boulevard, Timbuktu",
+      "phone": "(223) 555-3690",
+      "website": "https://sahelagcoop.org",
+      "image": "sahel-ag.png",
+      "membershipLevel": 1,
+      "tagline": "Growing community through agriculture",
+      "description": "A cooperative supporting local farmers with sustainable agricultural practices and market access."
+    },
+    {
+      "name": "Timbuktu Treasures",
+      "address": "33 Market Street, Timbuktu",
+      "phone": "(223) 555-9102",
+      "website": "https://timbuktutreasures.com",
+      "image": "timbuktu-treasures.jpg",
+      "membershipLevel": 2,
+      "tagline": "Authentic Malian crafts and souvenirs",
+      "description": "A boutique offering handcrafted goods from local artisans including jewelry, pottery, and art."
+    }
+  ]
+}
