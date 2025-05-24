@@ -59,3 +59,32 @@ header {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
 }
+
+/* Medium screen home page adjustments */
+.home {
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero {
+    grid-column: 1 / -1;
+}
+
+.current-event {
+    grid-column: 1 / 2;
+}
+
+.weather {
+    grid-column: 2 / 3;
+}
+
+.spotlights {
+    grid-column: 1 / -1;
+}
+
+.spotlight-container {
+    grid-template-columns: 1fr 1fr;
+}
+
+.weather-card {
+    grid-template-columns: 1fr;
+}

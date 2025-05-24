@@ -32,3 +32,13 @@ if (localStorage.getItem("darkMode") === "enabled") {
 // Update footer with current year and last modification date
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
+
+// Display current date
+function displayCurrentDate() {
+    const now = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('currentDate').textContent = now.toLocaleDateString('en-US', options);
+}
+
+// Call displayCurrentDate when the page loads
+document.addEventListener('DOMContentLoaded', displayCurrentDate);

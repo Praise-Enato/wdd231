@@ -80,3 +80,30 @@ main.directory {
 .footer-bottom p {
     margin: 0;
 }
+
+/* Large screen home page adjustments */
+.home {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: var(--spacing-lg) var(--spacing-xl);
+}
+
+.current-event {
+    grid-column: 1 / 2;
+}
+
+.weather {
+    grid-column: 2 / 3;
+}
+
+.spotlights {
+    grid-column: 3 / 4;
+    grid-row: 2;
+}
+
+.spotlight-container {
+    grid-template-columns: 1fr;
+}
+
+.weather-card {
+    grid-template-columns: 1fr;
+}
