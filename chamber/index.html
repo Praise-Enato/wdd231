@@ -30,12 +30,13 @@
         <div class="logo">
             <img src="images/timbuktu-logo.png" alt="Timbuktu Chamber of Commerce Logo">
             <div class="site-name">
-                <h1>Chamber of Commerce</h1>
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
             </div>
         </div>
         <div class="navigation">
-            <button id="hamburgerBtn">&#9776;</button>
-            <nav>
+            <button id="hamburgerBtn" aria-label="Open navigation menu">&#9776;</button>
+            <nav role="navigation">
                 <ul id="primaryNav">
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
@@ -48,14 +49,14 @@
             </nav>
         </div>
         <div class="mode">
-            <button id="darkModeToggle">🌓</button>
+            <button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button>
         </div>
         <div class="date-banner">
             <span id="currentDate"></span>
         </div>
     </header>
     
-    <main class="home">
+    <main class="home" role="main">
         <section class="hero">
             <picture>
                 <source media="(min-width: 64em)" srcset="images/hero-large.jpg">

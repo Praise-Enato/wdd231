@@ -3,14 +3,14 @@
 /* Variables */
 :root {
     /* Color scheme */
-    --primary-color: #3E5641;    /* Deep forest green */
-    --secondary-color: #5A3B16;  /* Desert sand gold */
-    --background-color: #F5F5F5; /* Light gray */
-    --text-color: #333333;       /* Dark gray for text */
-    --accent-color: #BF4342;     /* Terracotta red accent */
-    --light-color: #FFFFFF;      /* White */
-    --dark-color: #1A1A1A;       /* Almost black */
-    --card-background: #EEEEEE;  /* Slightly darker gray for cards */
+    --primary-color: #3E5641;    
+    --secondary-color: #5A3B16;  
+    --background-color: #F5F5F5; 
+    --text-color: #333333;       
+    --accent-color: #722727;    
+    --light-color: #FFFFFF;      
+    --dark-color: #1A1A1A;      
+    --card-background: #EEEEEE; 
     
     /* Typography */
     --heading-font: 'Montserrat', sans-serif;
@@ -560,4 +560,68 @@ footer {
 .dark-mode .forecast {
     background-color: var(--light-color);
     color: var(--dark-color);
+}
+
+/* Spotlight specific styles */
+.spotlight-container {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.spotlight-card {
+    background-color: var(--card-background);
+    padding: var(--spacing-md);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.spotlight-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.spotlight-image {
+    height: 100px;
+    margin: 0 auto var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spotlight-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.member-level {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-bottom-left-radius: 5px;
+}
+
+.member-level.gold {
+    background-color: gold;
+    color: var(--dark-color);
+}
+
+.member-level.silver {
+    background-color: silver;
+    color: var(--dark-color);
+}
+
+/* Dark mode adjustments */
+.dark-mode .spotlight-card {
+    background-color: var(--dark-color);
+}
+
+.dark-mode .spotlight-card h3 {
+    color: var(--secondary-color);
 }

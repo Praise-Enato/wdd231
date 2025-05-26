@@ -1,9 +1,10 @@
 // weather.js - Weather data functionality for Timbuktu Chamber of Commerce
 
-// API key for OpenWeatherMap (replace with your actual API key)
-const API_KEY = 'YOUR_API_KEY';
-const CITY = 'Timbuktu';
-const COUNTRY = 'ML';
+// API Configuration
+const API_KEY = '136b22b129bedd793f93911bae13beae'; // ← Your actual key here
+const CITY = 'Ogun';
+const COUNTRY = 'NG'; // Use 'US' for United States, 'NG' for Nigeria, etc.
+const UNITS = 'metric'; // Use 'imperial' for Fahrenheit
 
 // DOM Elements
 const currentTempElement = document.getElementById('current-temp');
@@ -15,28 +16,29 @@ const forecastContainer = document.getElementById('forecast-container');
 // Fetch weather data from OpenWeatherMap API
 async function fetchWeatherData() {
     try {
-        // Current weather
+        // 1. Fetch current weather
         const currentResponse = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=${CITY},${COUNTRY}&units=metric&appid=${API_KEY}`
+            `https://api.openweathermap.org/data/2.5/weather?q=${CITY},${COUNTRY}&units=${UNITS}&appid=${API_KEY}`
         );
         
         if (!currentResponse.ok) {
-            throw new Error(`HTTP error! status: ${currentResponse.status}`);
+            throw new Error(`Current weather error: ${currentResponse.status}`);
         }
         
         const currentData = await currentResponse.json();
         
-        // Forecast
+        // 2. Fetch forecast data
         const forecastResponse = await fetch(
-            `https://api.openweathermap.org/data/2.5/forecast?q=${CITY},${COUNTRY}&units=metric&appid=${API_KEY}`
+            `https://api.openweathermap.org/data/2.5/forecast?q=${CITY},${COUNTRY}&units=${UNITS}&appid=${API_KEY}`
         );
         
         if (!forecastResponse.ok) {
-            throw new Error(`HTTP error! status: ${forecastResponse.status}`);
+            throw new Error(`Forecast error: ${forecastResponse.status}`);
         }
         
         const forecastData = await forecastResponse.json();
         
+        // 3. Update the UI
         displayCurrentWeather(currentData);
         displayForecast(forecastData);
         
@@ -46,18 +48,18 @@ async function fetchWeatherData() {
     }
 }
 
-// Display current weather
+// Display current weather data
 function displayCurrentWeather(data) {
     const temp = Math.round(data.main.temp);
     const desc = data.weather[0].description;
     const humidity = data.main.humidity;
     const iconCode = data.weather[0].icon;
     
-    currentTempElement.textContent = `${temp}°C`;
+    currentTempElement.textContent = `${temp}°${UNITS === 'metric' ? 'C' : 'F'}`;
     weatherDescElement.textContent = desc.charAt(0).toUpperCase() + desc.slice(1);
     humidityElement.textContent = humidity;
     
-    // Create weather icon
+    // Display weather icon from OpenWeatherMap
     weatherIconElement.innerHTML = `<img src="https://openweathermap.org/img/wn/${iconCode}@2x.png" alt="${desc}">`;
 }
 
@@ -82,7 +84,7 @@ function displayForecast(data) {
         forecastDay.innerHTML = `
             <span>${dayName}</span>
             <span><img src="https://openweathermap.org/img/wn/${iconCode}.png" alt="${day.weather[0].description}"></span>
-            <span>${temp}°C</span>
+            <span>${temp}°${UNITS === 'metric' ? 'C' : 'F'}</span>
         `;
         
         forecastContainer.appendChild(forecastDay);
@@ -91,10 +93,11 @@ function displayForecast(data) {
 
 // Display error message if weather fetch fails
 function displayWeatherError() {
-    currentTempElement.textContent = 'N/A';
+    currentTempElement.textContent = '--';
     weatherDescElement.textContent = 'Weather data unavailable';
-    forecastContainer.innerHTML = '<p>Forecast data unavailable</p>';
+    humidityElement.textContent = '--';
+    forecastContainer.innerHTML = '<p>Forecast unavailable</p>';
 }
 
-// Initialize weather functionality
+// Initialize weather when page loads
 document.addEventListener('DOMContentLoaded', fetchWeatherData);
