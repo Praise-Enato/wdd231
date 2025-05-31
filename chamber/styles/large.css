@@ -107,3 +107,18 @@ main.directory {
 .weather-card {
     grid-template-columns: 1fr;
 }
+
+/* Large screen join page adjustments */
+.join-container {
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+.membership-cards {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+}
+
+.modal-content {
+    margin: 5% auto;
+}

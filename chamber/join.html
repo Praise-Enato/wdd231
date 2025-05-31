@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Timbuktu Chamber of Commerce to grow your business and connect with our community">
+    <meta name="author" content="Praise Enato">
+    
+    <title>Join | Timbuktu Chamber of Commerce</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 32.5em)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 64em)">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/timbuktu-logo.png" alt="Timbuktu Chamber of Commerce Logo">
+            <div class="site-name">
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <button id="hamburgerBtn">&#9776;</button>
+            <nav>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li class="active"><a href="join.html">Join</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="podcast.html">Podcast</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mode">
+            <button id="darkModeToggle">🌓</button>
+        </div>
+        <div class="date-banner">
+            <span id="currentDate"></span>
+        </div>
+    </header>
+    
+    <main class="join">
+        <h1>Join the Chamber</h1>
+        
+        <div class="join-container">
+            <form id="joinForm" method="get" action="thankyou.html" class="join-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label>
+                        First Name*
+                        <input type="text" name="firstName" required 
+                               autocomplete="given-name" title="Please enter your first name">
+                    </label>
+                    
+                    <label>
+                        Last Name*
+                        <input type="text" name="lastName" required 
+                               autocomplete="family-name" title="Please enter your last name">
+                    </label>
+                    
+                    <label>
+                        Title/Position
+                        <input type="text" name="title" 
+                               autocomplete="organization-title" 
+                               title="Your position in the organization"
+                               pattern="[a-zA-Z\- ]{7,}">
+                        <span class="hint">Alpha characters, hyphens, and spaces only (min 7 characters)</span>
+                    </label>
+                    
+                    <label>
+                        Email*
+                        <input type="email" name="email" required 
+                               autocomplete="email" placeholder="example@domain.com"
+                               title="Please enter a valid email address">
+                    </label>
+                    
+                    <label>
+                        Mobile Phone*
+                        <input type="tel" name="phone" required 
+                               autocomplete="tel" title="Please enter your phone number">
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Business Information</legend>
+                    
+                    <label>
+                        Business/Organization Name*
+                        <input type="text" name="business" required 
+                               autocomplete="organization" title="Please enter your business name">
+                    </label>
+                    
+                    <label>
+                        Business Description
+                        <textarea name="description" title="Brief description of your business"></textarea>
+                    </label>
+                    
+                    <label>
+                        Membership Level*
+                        <select name="membership" required title="Select a membership level">
+                            <option value="" selected disabled>Select a level...</option>
+                            <option value="np">NP Membership (Non-Profit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                
+                <input type="submit" value="Join Now" class="submit-btn">
+            </form>
+            
+            <div class="membership-cards">
+                <div class="card np">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations</p>
+                    <p class="price">No Fee</p>
+                    <button class="info-btn" data-modal="npModal">Learn More</button>
+                </div>
+                
+                <div class="card bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic benefits for small businesses</p>
+                    <p class="price">$100/year</p>
+                    <button class="info-btn" data-modal="bronzeModal">Learn More</button>
+                </div>
+                
+                <div class="card silver">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced benefits</p>
+                    <p class="price">$250/year</p>
+                    <button class="info-btn" data-modal="silverModal">Learn More</button>
+                </div>
+                
+                <div class="card gold">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits</p>
+                    <p class="price">$500/year</p>
+                    <button class="info-btn" data-modal="goldModal">Learn More</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Membership Modals -->
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>NP Membership Benefits</h2>
+                <ul>
+                    <li>Free listing in our directory</li>
+                    <li>Access to member-only resources</li>
+                    <li>Monthly newsletter</li>
+                    <li>Invitation to annual non-profit summit</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <ul>
+                    <li>All NP benefits plus:</li>
+                    <li>Business listing with logo</li>
+                    <li>10% discount on chamber events</li>
+                    <li>Access to business training workshops</li>
+                    <li>Quarterly networking events</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <ul>
+                    <li>All Bronze benefits plus:</li>
+                    <li>Featured listing in directory</li>
+                    <li>20% discount on chamber events</li>
+                    <li>Priority access to training workshops</li>
+                    <li>Monthly networking events</li>
+                    <li>One spotlight feature per year</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <ul>
+                    <li>All Silver benefits plus:</li>
+                    <li>Premium featured listing</li>
+                    <li>30% discount on chamber events</li>
+                    <li>VIP access to all training</li>
+                    <li>Weekly networking opportunities</li>
+                    <li>Quarterly spotlight features</li>
+                    <li>Complimentary event sponsorships</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/timbuktu-logo.png" alt="Timbuktu Chamber of Commerce Logo">
+                <h3>Timbuktu Chamber of Commerce</h3>
+                <p>10 Rue De La Paix</p>
+                <p>Timbuktu, Mali 999</p>
+            </div>
+            <div class="footer-contact">
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-2300</p>
+                <div class="social-icons">
+                    <a href="https://youtube.com" target="_blank"><img src="images/youtube-icon.png" alt="YouTube"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>WDD231 Class Project</p>
+            <p>Praise Enato</p>
+            <p>&copy; <span id="currentYear"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+</html>

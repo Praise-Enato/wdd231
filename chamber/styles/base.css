@@ -625,3 +625,192 @@ footer {
 .dark-mode .spotlight-card h3 {
     color: var(--secondary-color);
 }
+
+/* Join page styles */
+.join-container {
+    display: grid;
+    gap: var(--spacing-lg);
+}
+
+.join-form {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.join-form fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.join-form legend {
+    padding: 0 var(--spacing-sm);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.join-form label {
+    display: block;
+    margin-bottom: var(--spacing-md);
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: var(--body-font);
+}
+
+.join-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.hint {
+    font-size: 0.8rem;
+    color: #666;
+    display: block;
+    margin-top: var(--spacing-xs);
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Membership cards */
+.membership-cards {
+    display: grid;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: var(--spacing-md);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: var(--spacing-sm) 0;
+}
+
+.info-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.info-btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: var(--background-color);
+    margin: 10% auto;
+    padding: var(--spacing-lg);
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.close {
+    position: absolute;
+    right: var(--spacing-md);
+    top: var(--spacing-sm);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Thank you page */
+.confirmation {
+    background-color: var(--card-background);
+    padding: var(--spacing-lg);
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: var(--spacing-md);
+    transition: background-color 0.3s;
+}
+
+.home-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Dark mode adjustments */
+.dark-mode .join-form fieldset {
+    border-color: var(--secondary-color);
+}
+
+.dark-mode .join-form legend {
+    color: var(--secondary-color);
+}
+
+.dark-mode .card {
+    background-color: var(--dark-color);
+    border-color: #444;
+}
+
+.dark-mode .confirmation {
+    background-color: var(--dark-color);
+}

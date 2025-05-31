@@ -88,3 +88,12 @@ header {
 .weather-card {
     grid-template-columns: 1fr;
 }
+
+/* Medium screen join page adjustments */
+.join-container {
+    grid-template-columns: 1fr;
+}
+
+.membership-cards {
+    grid-template-columns: repeat(2, 1fr);
+}
