@@ -41,4 +41,6 @@ function displayCurrentDate() {
 }
 
 // Call displayCurrentDate when the page loads
-document.addEventListener('DOMContentLoaded', displayCurrentDate);
+document.addEventListener('DOMContentLoaded', function() {
+    displayCurrentDate();
+});

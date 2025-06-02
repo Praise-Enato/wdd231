@@ -143,4 +143,6 @@ async function loadMemberData() {
 }
 
 // Initialize directory page
-document.addEventListener('DOMContentLoaded', loadMemberData);
+document.addEventListener('DOMContentLoaded', function() {
+  loadMemberData();
+});

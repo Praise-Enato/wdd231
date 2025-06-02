@@ -17,23 +17,29 @@ function getMembershipLevel(level) {
 function createSpotlightCard(member) {
     const card = document.createElement('div');
     card.className = 'spotlight-card';
-    
+
+    // Create image element with JS error handler
+    const img = document.createElement('img');
+    img.src = `images/${member.image}`;
+    img.alt = `${member.name} logo`;
+    img.onerror = function() {
+        this.src = 'images/placeholder.jpg';
+    };
+
     card.innerHTML = `
         <h3>${member.name}</h3>
-        <div class="spotlight-image">
-            <img src="images/${member.image}" alt="${member.name} logo" onerror="this.src='images/placeholder.jpg'">
-        </div>
+        <div class="spotlight-image"></div>
         <p class="member-tagline">"${member.tagline}"</p>
         <div class="member-contact">
             <p><strong>Address:</strong> ${member.address}</p>
             <p><strong>Phone:</strong> ${member.phone}</p>
-            <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website.replace(/^https?:\/\//, '')}</a></p>
+            <p><strong>Website:</strong> <a href="${member.website}" target="_blank" rel="noopener">${member.website.replace(/^https?:\/\//, '')}</a></p>
         </div>
         <div class="member-level ${getMembershipLevel(member.membershipLevel).toLowerCase()}">
             ${getMembershipLevel(member.membershipLevel)} Member
         </div>
     `;
-    
+    card.querySelector('.spotlight-image').appendChild(img);
     return card;
 }
 
@@ -82,4 +88,6 @@ async function fetchMemberData() {
 }
 
 // Initialize spotlights when DOM is loaded
-document.addEventListener('DOMContentLoaded', fetchMemberData);
+document.addEventListener('DOMContentLoaded', function() {
+  fetchMemberData();
+});

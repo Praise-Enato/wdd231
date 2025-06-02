@@ -100,4 +100,6 @@ function displayWeatherError() {
 }
 
 // Initialize weather when page loads
-document.addEventListener('DOMContentLoaded', fetchWeatherData);
+document.addEventListener('DOMContentLoaded', function() {
+  fetchWeatherData();
+});
