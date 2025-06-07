@@ -1,0 +1,346 @@
+/* Neriss Hair Penache - Website Plan Styles */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #8B0000;
+    background-color: #FFF0F5;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #FF69B4, #FFB6C1);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Typography */
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #FF1493;
+    border-bottom: 3px solid #FFB6C1;
+    padding-bottom: 0.5rem;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: 'Arial', sans-serif;
+    color: #C71585;
+    margin: 1.5rem 0 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+/* Section Styles */
+.section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-left: 5px solid #FF69B4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Color Palette Styles */
+.color-palette {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.color-swatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.color-swatch:hover {
+    transform: scale(1.05);
+}
+
+.color-box {
+    width: 100px;
+    height: 80px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+}
+
+/* Typography Demo Styles */
+.typography-demo {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #FFEEF7;
+    border-radius: 5px;
+    border-left: 4px solid #FF69B4;
+    transition: background-color 0.3s ease;
+}
+
+.typography-demo:hover {
+    background: #FFE4E1;
+}
+
+/* Wireframe Styles */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.wireframe {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid #FFB6C1;
+    transition: border-color 0.3s ease;
+}
+
+.wireframe:hover {
+    border-color: #FF69B4;
+}
+
+.wireframe-sketch {
+    background: white;
+    border: 2px dashed #FF69B4;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.wireframe-element {
+    background: #FFE4E1;
+    border: 1px solid #FF69B4;
+    padding: 0.5rem;
+    text-align: center;
+    color: #8B0000;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.wireframe-element:hover {
+    background: #FFB6C1;
+    color: white;
+}
+
+.wireframe-header { 
+    height: 60px; 
+}
+
+.wireframe-nav { 
+    height: 40px; 
+}
+
+.wireframe-hero { 
+    height: 120px; 
+    background: #FFB6C1; 
+}
+
+.wireframe-content { 
+    flex: 1; 
+}
+
+.wireframe-footer { 
+    height: 50px; 
+}
+
+/* List Styles */
+ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+li:hover {
+    color: #FF1493;
+}
+
+/* Highlight Styles */
+.highlight {
+    background: #FFE4E1;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    color: #8B0000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.highlight:hover {
+    background: #FF69B4;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #FFE4E1;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background: #FFB6C1;
+}
+
+footer p {
+    color: #8B0000;
+    transition: color 0.3s ease;
+}
+
+footer:hover p {
+    color: white;
+}
+
+/* Interactive Elements */
+.interactive {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.interactive:hover {
+    opacity: 0.8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wireframe-container {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .color-palette {
+        justify-content: center;
+    }
+    
+    body {
+        padding: 10px;
+    }
+    
+    .section {
+        padding: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .color-box {
+        width: 80px;
+        height: 60px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .color-palette {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .wireframe-sketch {
+        height: 350px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section {
+        padding: 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+        max-width: none;
+        padding: 0;
+    }
+    
+    .section {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        break-inside: avoid;
+    }
+    
+    header {
+        background: #f0f0f0 !important;
+        color: black !important;
+    }
+    
+    .wireframe-container {
+        grid-template-columns: 1fr;
+    }
+}
