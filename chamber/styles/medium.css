@@ -97,3 +97,25 @@ header {
 .membership-cards {
     grid-template-columns: repeat(2, 1fr);
 }
+
+/* Medium screen discover page */
+.discover {
+    grid-template-areas:
+        "title title"
+        "sidebar gallery";
+    grid-template-columns: 1fr 2fr;
+}
+
+.gallery {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Image hover effects only for non-mobile */
+.attraction-card img {
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.attraction-card img:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}

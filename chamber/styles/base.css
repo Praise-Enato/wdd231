@@ -814,3 +814,96 @@ footer {
 .dark-mode .confirmation {
     background-color: var(--dark-color);
 }
+
+/* Discover page styles */
+.discover {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "sidebar"
+        "gallery";
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md);
+}
+
+.discover h1 {
+    grid-area: title;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.demographics, .visitor-message {
+    background-color: var(--card-background);
+    padding: var(--spacing-md);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.gallery {
+    grid-area: gallery;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+.attraction-card {
+    background-color: var(--card-background);
+    padding: var(--spacing-md);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.attraction-card h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.attraction-card figure {
+    margin: 0;
+    padding: 0;
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.attraction-card address {
+    font-style: normal;
+    margin: var(--spacing-sm) 0;
+    color: var(--secondary-color);
+}
+
+.learn-more {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Dark mode adjustments */
+.dark-mode .demographics,
+.dark-mode .visitor-message,
+.dark-mode .attraction-card {
+    background-color: var(--dark-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.dark-mode .attraction-card h2 {
+    color: var(--secondary-color);
+}

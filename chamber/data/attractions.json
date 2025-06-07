@@ -1,0 +1,52 @@
+{
+  "attractions": [
+    {
+      "name": "Sankore Mosque",
+      "address": "Quartier Sankore, Timbuktu",
+      "description": "One of three ancient mosques of Timbuktu, built in the 14th century and center of the historic University of Timbuktu.",
+      "image": "sankore-mosque.webp"
+    },
+    {
+      "name": "Djinguereber Mosque",
+      "address": "Rue de la Mosquée, Timbuktu",
+      "description": "Built in 1327, this mosque is a famous learning center and one of Timbuktu's most recognizable landmarks.",
+      "image": "djinguereber-mosque.jpg"
+    },
+    {
+      "name": "Ahmed Baba Institute",
+      "address": "Avenue de l'Indépendance, Timbuktu",
+      "description": "Houses thousands of manuscripts from Timbuktu's golden age, showcasing Africa's rich intellectual history.",
+      "image": "ahmed-baba-institute.webp"
+    },
+    {
+      "name": "Timbuktu Manuscripts",
+      "address": "Various locations, Timbuktu",
+      "description": "Ancient scholarly texts covering topics from astronomy to medicine, dating back to the 13th century.",
+      "image": "manuscripts.webp"
+    },
+    {
+      "name": "Tomb of Askia",
+      "address": "Gao Road, Timbuktu",
+      "description": "A UNESCO World Heritage Site, this 15th century pyramidal tomb is a fine example of Sudano-Sahelian architecture.",
+      "image": "tomb-of-askia.webp"
+    },
+    {
+      "name": "Timbuktu Market",
+      "address": "Grand Marché, Timbuktu",
+      "description": "Vibrant local market offering traditional crafts, spices, and goods from across the Sahara.",
+      "image": "market.webp"
+    },
+    {
+      "name": "Sahara Desert Tours",
+      "address": "Various tour operators, Timbuktu",
+      "description": "Experience camel treks and overnight stays in the majestic Sahara Desert surrounding Timbuktu.",
+      "image": "sahara-tours.webp"
+    },
+    {
+      "name": "Festival au Désert",
+      "address": "Outside Timbuktu",
+      "description": "Annual music festival celebrating Tuareg culture with traditional and contemporary desert blues music.",
+      "image": "festival.webp"
+    }
+  ]
+}

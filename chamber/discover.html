@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the attractions and features of Timbuktu, Mali - a city rich in history and culture">
+    <meta name="author" content="Praise Enato">
+    
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Discover Timbuktu | Chamber of Commerce">
+    <meta property="og:description" content="Explore the rich history and attractions of Timbuktu, Mali. Learn about local landmarks, cultural sites, and business opportunities.">
+    <meta property="og:image" content="https://praise-enato.github.io/wdd231/chamber/images/timbuktu-social-share.jpg">
+    <meta property="og:url" content="https://praise-enato.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+    
+    <title>Discover Timbuktu | Chamber of Commerce</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="images/favicon-16x16.png" type="image/png" sizes="16x16">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 32.5em)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 64em)">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/timbuktu-logo.png" alt="Timbuktu Chamber of Commerce Logo">
+            <div class="site-name">
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <button id="hamburgerBtn" aria-label="Open navigation menu">&#9776;</button>
+            <nav>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="podcast.html">Podcast</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mode">
+            <button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button>
+        </div>
+        <div class="date-banner">
+            <span id="currentDate"></span>
+        </div>
+    </header>
+    
+    <main class="discover">
+        <h1>Discover Timbuktu</h1>
+        
+        <div class="sidebar">
+            <div class="demographics">
+                <h2>About Timbuktu</h2>
+                <p>Population: ~55,000</p>
+                <p>Elevation: 261 m (856 ft)</p>
+                <p>Founded: 11th century</p>
+                <p>Region: Tombouctou</p>
+                <p>UNESCO World Heritage Site</p>
+            </div>
+            
+            <div class="visitor-message">
+                <h2>Welcome Back!</h2>
+                <p id="lastVisitMessage"></p>
+            </div>
+        </div>
+        
+        <div class="gallery" id="attractionsGallery">
+            <!-- Attractions will be loaded from JSON via JavaScript -->
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/timbuktu-logo.png" alt="Timbuktu Chamber of Commerce Logo">
+                <h3>Timbuktu Chamber of Commerce</h3>
+                <p>10 Rue De La Paix</p>
+                <p>Timbuktu, Mali 999</p>
+            </div>
+            <div class="footer-contact">
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-2300</p>
+                <div class="social-icons">
+                    <a href="https://youtube.com" target="_blank"><img src="images/youtube-icon.png" alt="YouTube"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>WDD231 Class Project</p>
+            <p>Praise Enato</p>
+            <p>&copy; <span id="currentYear"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/discover.js"></script>
+</body>
+</html>
