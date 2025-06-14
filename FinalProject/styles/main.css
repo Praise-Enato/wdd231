@@ -35,7 +35,7 @@ main {
 
 /* Header and Navigation */
 .site-header {
-  background: linear-gradient(135deg, #FF69B4, #FFB6C1);
+  background: linear-gradient(135deg, #850042, #FF69B4);
   color: white;
   padding: 1.5rem 2rem;
   display: flex;
@@ -113,7 +113,7 @@ main {
 }
 
 .btn.primary {
-  background-color: #FF69B4;
+  background-color: #850042;
   color: white;
 }
 
@@ -128,7 +128,7 @@ main {
 }
 
 .btn.secondary:hover {
-  background-color: #FFB6C1;
+  background-color: #850042;
   color: white;
 }
 
