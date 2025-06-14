@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Confirmation Page – Neriss Hair Penache" />
+  <meta name="author" content="Neriss Hair Penache" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <title>Contact Submitted | Neriss Hair Penache</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Neriss Hair Penache</div>
+    <nav class="main-nav">
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="care-guide.html">Care Guide</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="text-align: center; padding: 3rem 1rem;">
+    <h1>Thank You!</h1>
+    <p>Your consultation request has been received.</p>
+    <div id="submitted-data" style="margin-top: 2rem; background: #FFEEF7; padding: 1.5rem; border-radius: 10px;">
+      <h2>Your Submitted Info</h2>
+      <p><strong>Name:</strong> <span id="name"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Preferred Wig:</strong> <span id="wig"></span></p>
+      <p><strong>Note:</strong> <span id="message"></span></p>
+    </div>
+    <a href="shop.html" class="btn primary" style="margin-top: 2rem; display: inline-block;">Back to Shop</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Neriss Hair Penache</p>
+    <nav class="footer-nav">
+      <a href="attributions.html">Attributions</a> |
+      <a href="#" target="_blank">Video Demo</a>
+    </nav>
+    <div class="social-links">
+      <a href="https://www.instagram.com/neriss_hairpanache?igsh=Mml5c3FlcmNqdXd3">Instagram</a> |
+      <a href="https://www.facebook.com/share/19Y9k35T1S/">Facebook</a> |
+      <a href="https://www.tiktok.com/@neriss_hair_panache?_r=1&_d=ej1c46jj9c27k3&sec_uid=MS4wLjABAAAApUw0S2p8ZP3OOm8Yz_Txg_SUEg_v_-bErwQnx-fZIJ_Bj2kQFSs4cPV1q5c2RP_s&share_author_id=6936777683620054021&sharer_language=en&source=h5_m&u_code=dhc7i3191d6mg9&timestamp=1749916749&user_id=6936777683620054021&sec_user_id=MS4wLjABAAAApUw0S2p8ZP3OOm8Yz_Txg_SUEg_v_-bErwQnx-fZIJ_Bj2kQFSs4cPV1q5c2RP_s&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7502177065745008390&share_link_id=22832d94-f618-4787-9873-4189a38f17bd&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1">TikTok</a>
+    </div>
+  </footer>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    document.getElementById('name').textContent = urlParams.get('name') || 'N/A';
+    document.getElementById('email').textContent = urlParams.get('email') || 'N/A';
+    document.getElementById('wig').textContent = urlParams.get('wig') || 'N/A';
+    document.getElementById('message').textContent = urlParams.get('message') || '—';
+  </script>
+</body>
+</html>

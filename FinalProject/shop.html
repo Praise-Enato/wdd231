@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop Human Hair and Synthetic Wigs – Neriss Hair Penache" />
+  <meta name="author" content="Neriss Hair Penache" />
+  <meta property="og:title" content="Shop Wigs – Neriss Hair Penache" />
+  <meta property="og:description" content="Browse and purchase premium wigs with full care guidance." />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <title>Shop | Neriss Hair Penache</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Neriss Hair Penache</div>
+    <nav class="main-nav" id="main-nav">
+      <button class="hamburger" aria-label="Toggle Menu" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="care-guide.html">Care Guide</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Wig Catalog</h1>
+      <p>Explore hand-picked wigs with full specifications and care compatibility.</p>
+    </section>
+
+    <section class="featured-products">
+      <h2>All Wigs</h2>
+      <div id="shop-container" class="product-grid">
+        <!-- JS will load all 15 wigs here -->
+      </div>
+    </section>
+
+    <section class="services">
+      <h2>Book a Consultation</h2>
+      <form action="contact-success.html" method="get" class="interactive" style="max-width: 500px;">
+        <label for="name">Full Name</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email Address</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="wig">Preferred Wig Style</label><br />
+        <input type="text" id="wig" name="wig" /><br /><br />
+
+        <label for="message">Additional Notes</label><br />
+        <textarea id="message" name="message" rows="4"></textarea><br /><br />
+
+        <button type="submit" class="btn primary">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Neriss Hair Penache</p>
+    <nav class="footer-nav">
+      <a href="attributions.html">Attributions</a> |
+      <a href="#" target="_blank">Video Demo</a>
+    </nav>
+    <div class="social-links">
+      <a href="https://www.instagram.com/neriss_hairpanache?igsh=Mml5c3FlcmNqdXd3">Instagram</a> |
+      <a href="https://www.facebook.com/share/19Y9k35T1S/">Facebook</a> |
+      <a href="https://www.tiktok.com/@neriss_hair_panache?_r=1&_d=ej1c46jj9c27k3&sec_uid=MS4wLjABAAAApUw0S2p8ZP3OOm8Yz_Txg_SUEg_v_-bErwQnx-fZIJ_Bj2kQFSs4cPV1q5c2RP_s&share_author_id=6936777683620054021&sharer_language=en&source=h5_m&u_code=dhc7i3191d6mg9&timestamp=1749916749&user_id=6936777683620054021&sec_user_id=MS4wLjABAAAApUw0S2p8ZP3OOm8Yz_Txg_SUEg_v_-bErwQnx-fZIJ_Bj2kQFSs4cPV1q5c2RP_s&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7502177065745008390&share_link_id=22832d94-f618-4787-9873-4189a38f17bd&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1">TikTok</a>
+    </div>
+  </footer>
+
+  <!-- Modal Dialog -->
+  <div id="modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span id="modal-close" class="close">&times;</span>
+      <div id="modal-body">
+        <!-- JS will inject product detail -->
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="scripts/shop.js"></script>
+</body>
+</html>

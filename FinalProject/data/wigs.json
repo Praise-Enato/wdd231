@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Elegant 10inches Bob wig",
+    "type": "Lace Front",
+    "material": "Human Hair",
+    "price": 65000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 2,
+    "name": "body Waves frontal",
+    "type": "Frontal",
+    "material": "Human Hair",
+    "price": 150000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Classic Straight Full Closure Wig",
+    "type": "Closure",
+    "material": "Human Hair",
+    "price": 80000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Curly Glam Afro Wig",
+    "type": "Full Cap",
+    "material": "Human Hair",
+    "price": 50000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Deep Wave piano frontal",
+    "type": "Frontal",
+    "material": "Human Hair",
+    "price": 140000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Kinky",
+    "type": "Closure",
+    "material": "Human Hair",
+    "price": 70000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Blonde Bone Straight Wig",
+    "type": "Closure",
+    "material": "Synthetic",
+    "price": 145000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Water Wave Long Lace",
+    "type": "Lace Front",
+    "material": "Human Hair",
+    "price": 60000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Body Wave Side Part",
+    "type": "Closure",
+    "material": "Human Hair",
+    "price": 37000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Pixie Cut Wig",
+    "type": "Full Cap",
+    "material": "Synthetic",
+    "price": 15000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Deep Curl Lace Wig",
+    "type": "Lace Front",
+    "material": "Human Hair",
+    "price": 55000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Long Straight Wig",
+    "type": "Full Cap",
+    "material": "Synthetic",
+    "price": 20000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Celebrity wig",
+    "type": "Fringe",
+    "material": "Human Hair",
+    "price": 60000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Burgundy Curls",
+    "type": "Closure",
+    "material": "Synthetic",
+    "price": 26000,
+    "image": "images/silky.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Straight Part Frontal",
+    "type": "Frontal",
+    "material": "Human Hair",
+    "price": 42000,
+    "image": "images/silky.jpg"
+  }
+]
