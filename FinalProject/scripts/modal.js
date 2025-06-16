@@ -10,3 +10,5 @@ export function setupNavigation() {
     });
   }
 }
+
+document.getElementById('doSomethingBtn').addEventListener('click', doSomething);

@@ -30,3 +30,5 @@ export async function loadFeaturedWigs() {
     console.error('Error fetching wigs:', err);
   }
 }
+
+document.getElementById('doSomethingBtn').addEventListener('click', doSomething);
