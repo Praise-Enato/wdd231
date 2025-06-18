@@ -45,13 +45,8 @@ function showModal(wig) {
     <p><strong>Material:</strong> ${wig.material}</p>
     <p><strong>Price:</strong> ₦${wig.price}</p>
     <p><strong>Description:</strong> A premium quality ${wig.material.toLowerCase()} wig with professional-grade finishing, ideal for both daily and event wear.</p>
-    <button id="addToCartBtn">Add to Cart</button>
   `;
   modal.style.display = 'block';
-
-  document.getElementById('addToCartBtn').addEventListener('click', function() {
-    // Add to cart logic here
-  });
 }
 
 modalClose.addEventListener('click', () => {
@@ -63,7 +58,5 @@ window.addEventListener('click', (e) => {
     modal.style.display = 'none';
   }
 });
-
-document.getElementById('doSomethingBtn').addEventListener('click', doSomething);
 
 fetchWigs();
