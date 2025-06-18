@@ -11,5 +11,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Your shop now logic here
   });
 
-  document.getElementById('doSomethingBtn').addEventListener('click', doSomething);
-});
