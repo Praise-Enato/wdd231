@@ -7,7 +7,5 @@ document.addEventListener('DOMContentLoaded', () => {
   loadFeaturedWigs();   // Fetch and render products
   setupNavigation();     // Set up responsive menu
 
-  document.getElementById('shopNowBtn').addEventListener('click', function() {
-    // Your shop now logic here
-  });
+
 
